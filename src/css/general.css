@@ -1,0 +1,154 @@
+:root {
+  --primary-color: #feff88;
+  --secondary-color: #fe9f67;
+  --terciary-color: #f85a59;
+  --quaternary-color: #7b2039;
+  --fontColor: #490618;
+  --fontColorInv: #edeec5;
+
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Outfit', sans-serif;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: inherit;
+}
+
+
+
+body{
+  background-color: var(--primary-color);
+  color: var(--fontColor);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  /* min-height: 100vh; */
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.header-dv{
+  padding: 15px;
+  top: 25px;
+}
+
+
+
+/*
+
+
+*/
+
+
+
+
+
+.buttom-home-container{
+  display: flex;
+  width: 75%;
+  background-color: #312016;
+  padding: 15px;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+/* GENERAL */
+.dv-center-navbar{
+  display: flex;
+  justify-content: center;
+}
+
+
+/*GENERAL*/
+.navbar-container{
+  display: flex;
+  /* margin-top: 5%; */
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--secondary-color);
+  background: var(--terciary-color);
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 320px;
+}
+.navbar-container a{
+  color: var(--fontColorInv);
+  width: 80px;
+  padding: 2px 7px 2px 7px;
+}
+/*GENERAL*/
+.navlinkPending{
+ background-color: var(--primary-color);
+
+ ;
+}
+/*GENERAL*/
+.navlinkActive{
+background-color: var(--quaternary-color);
+
+
+    /* border: 1px  solid;
+    border-bottom-color: white;
+    border-left-color: var(--terciary-color);
+    border-top-color: var(--terciary-color);
+    border-right-color: var(--terciary-color); */
+ }
+
+.button-error-dv{
+  margin-top: 30px;
+}
+
+
+.format-footer{
+  margin-top: 35px;
+}
+
+
+
+
+
+@media (min-width: 769px) {
+  .navbar-container{
+    width: 480px;
+  }
+  .navbar-container a{
+    width: 110px;
+    padding: 6px 18px 6px 18px;
+  }
+  .dv-search-box{
+    margin: 36px;
+  }
+  .dv-search-box label, input{
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+}

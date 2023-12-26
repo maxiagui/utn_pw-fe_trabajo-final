@@ -1,0 +1,106 @@
+.container-image{
+    padding: 15px 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+  }
+  
+.container-card{
+    display: flex;
+    padding: 15px;
+    width: 160px;
+    height: 420px;
+    overflow: hidden;
+    background-color: var(--quaternary-color);
+    color: var(--fontColorInv);
+    margin: 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+  }
+  .img-content{
+    padding: 5px;
+    background-color:  var(--terciary-color);
+    width: 160px;
+    height: 320px;
+    overflow: hidden;
+  }
+  .img-content img{
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+  }
+  .img-content-search{
+    width: 240px;
+    height: 320px;
+    background-color: var(--terciary-color);
+    overflow: hidden;
+  }
+  .img-content-search img{
+    width: 95%;
+    height: 95%;
+    object-fit: contain;
+  }
+  
+.block-info{
+    max-height: 80px;
+  }
+  .block-info h4{
+    padding: 0px;
+    margin: 5px;
+  }
+  
+  .block-info-tittle{
+    display: flex;
+    height: 80px;
+    align-items: center;
+  }
+  
+
+.stlye-button {
+    width: 80px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 14px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: red;
+    padding: 1px;
+    border: 1px solid #4f1c1c;
+    cursor: pointer;
+  }
+  
+  .stlye-button:hover {
+    background-color: var(--quaternary-color); 
+    color: var(--fontColorInv);
+  }
+  .container-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+  @media (prefers-color-scheme: light) {
+    .stlye-button {
+      background-color: var(--terciary-color);
+      width: 80px;
+      margin: 0px 5px 0px 5px;
+      padding: 1px;
+    }
+    button:disabled {
+      background-color: var(--terciary-color);
+      width: 80px;
+      margin: 0px 5px 0px 5px;
+      padding: 1px;
+      cursor: not-allowed;
+      border-radius: 8px;
+    }
+   
+  }
